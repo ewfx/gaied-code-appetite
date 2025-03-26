@@ -9,7 +9,7 @@ import google.generativeai as genai
 from io import BytesIO
 
 # Configure Gemini
-print("Gemini API Key:", os.getenv("GOOGLE_API_KEY"))
+#print("Gemini API Key:", os.getenv("GOOGLE_API_KEY"))
 if not os.getenv("GOOGLE_API_KEY"):
     raise Exception("Please set your GOOGLE_API_KEY environment variable.")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
