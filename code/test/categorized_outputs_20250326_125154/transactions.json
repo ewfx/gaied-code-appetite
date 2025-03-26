@@ -1,0 +1,44 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "funds_transfer",
+        "sub_type": "inbound_payment",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests an 'inbound money movement' of a specified amount for share funding."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "MMIB-202504",
+      "amount": 25000,
+      "expiration_date": "11/15/2025",
+      "requestor": "Alice Morgan"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email1.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "funds_transfer",
+        "sub_type": "inbound_payment",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests an 'inbound money movement' of a specified amount for share funding."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "MMIB-202504",
+      "amount": 25000,
+      "expiration_date": "11/15/2025",
+      "requestor": "Alice Morgan"
+    },
+    "duplicate_detection": {
+      "is_duplicate": true,
+      "reason": "Matches email1.eml"
+    },
+    "email_file": "email4.eml"
+  }
+]

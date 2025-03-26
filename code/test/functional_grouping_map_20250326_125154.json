@@ -1,0 +1,13 @@
+{
+  "Transactions": [
+    "funds_transfer"
+  ],
+  "Disputes": [
+    "fee_dispute"
+  ],
+  "Account Information": [
+    "payment_confirmation",
+    "Payment Confirmation",
+    "Information Request"
+  ]
+}

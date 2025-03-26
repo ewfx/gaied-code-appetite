@@ -1,0 +1,23 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "Funding Update",
+        "sub_type": "Duplicate Request Investigation",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly states that a duplicate funding update request has been detected and requests investigation to consolidate or discard."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "DUP-1103",
+      "amount": "$15,000.00",
+      "review_deadline": "04/30/2025",
+      "attachment": "duplicate_report.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email13.eml"
+  }
+]

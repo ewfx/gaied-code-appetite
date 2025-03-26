@@ -1,0 +1,8 @@
+{
+  "Payments": "This group encompasses all requests related to the movement of funds, including initiating transfers, making outbound payments, and confirming payment status.",
+  "Fees": "This category includes requests concerning disputes, corrections, and amendments related to banking fees.",
+  "Account Information": "This group contains requests for general account information and updates on account funding.",
+  "Loans": "This group focuses solely on requests related to loan documentation.",
+  "Operations": "This category includes requests related to the internal processing of transactions and operational procedures.",
+  "Account Management": "This group contains requests for changes to account commitments or agreements."
+}

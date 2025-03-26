@@ -1,0 +1,17 @@
+{
+  "Payments": [
+    "funds_transfer",
+    "outbound_payment",
+    "payment_confirmation",
+    "Payment Confirmation"
+  ],
+  "Fees": [
+    "fee_dispute",
+    "fee_correction",
+    "fee_amendment_request"
+  ],
+  "Account Services": [
+    "Information Request",
+    "Commitment Change Request"
+  ]
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "funds_transfer",
+        "sub_type": "inbound_payment",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests an 'inbound money movement' of a specified amount for share funding."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "MMIB-202504",
+      "amount": 25000,
+      "expiration_date": "11/15/2025",
+      "requestor": "Alice Morgan"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email1.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "fee_dispute",
+        "sub_type": "reallocation_fee",
+        "confidence": 0.9,
+        "reasoning": "The email explicitly mentions a 'discrepancy in the reallocation fees' and refers to an attached document for details.  Loan ID and amount are provided."
+      },
+      {
+        "type": "payment_confirmation",
+        "sub_type": "letter_of_credit_fee",
+        "confidence": 0.8,
+        "reasoning": "The email explicitly states that the Letter of Credit fee has been successfully paid. A Loan ID and effective date are provided."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id_1": "ADJ-RF-8901",
+      "amount_1": "$1,500.00",
+      "date_1": "08/30/2024",
+      "loan_id_2": "FPLCF-7746",
+      "amount_2": "$3,200",
+      "effective_date_2": "03/01/2025"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "primary_intent": "fee_dispute",
+    "email_file": "email2_multiple_request.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Payment Confirmation",
+        "sub_type": "Letter of Credit Fee",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly states that the Letter of Credit fee has been paid and provides the loan ID and effective date. The attached receipt further supports this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "FPLCF-7750",
+      "amount": 3200,
+      "payment_type": "Letter of Credit Fee",
+      "effective_date": "09/01/2025",
+      "payer": "Catherine Zhang"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email3.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "funds_transfer",
+        "sub_type": "inbound_payment",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests an 'inbound money movement' of a specified amount for share funding."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "MMIB-202504",
+      "amount": 25000,
+      "expiration_date": "11/15/2025",
+      "requestor": "Alice Morgan"
+    },
+    "duplicate_detection": {
+      "is_duplicate": true,
+      "reason": "Matches email1.eml"
+    },
+    "email_file": "email4.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Information Request",
+        "sub_type": "Loan Product Details",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly asks for detailed brochures and guidelines on loan products."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "INFO-LOAN-2021",
+      "amount": null,
+      "expiration_date": null,
+      "customer_name": "Oliver Grant",
+      "attachment_error": true
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "updated_email20.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "fee_correction",
+        "sub_type": "monthly_fee_update",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions inaccurate monthly fee calculations and requests a review of the attached fee schedule to update the system.  The provided Loan ID, Monthly Fee, and Review Date further support this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "OF-3207",
+      "monthly_fee": "$700.00",
+      "review_date": "10/12/2025"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email5.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "outbound_payment",
+        "sub_type": "international_disbursement",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions initiating an outbound money movement of $40,000 for disbursement to international partners.  The attached compliance form further supports this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "MMO-6688",
+      "amount": 40000,
+      "expiration_date": "07/20/2025",
+      "attachments": [
+        "compliance_report.pdf"
+      ]
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email6.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "fee_amendment_request",
+        "sub_type": "fee_recalculation",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests a review of the amendment fee and mentions attached recalculation details. The subject is about amendment fee."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "ADJ-AF-3322",
+      "amendment_fee": "$950",
+      "reference_date": "06/15/2024"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "primary_intent": "fee_amendment_request",
+    "email_file": "email7.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Commitment Change Request",
+        "sub_type": "Loan Modification",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions updating commitment details and includes a commitment change form. The subject line further reinforces this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "CC-4502",
+      "new_commitment_amount": "$50,000.00",
+      "deadline": "12/31/2025",
+      "attachment": "commitment_change_form.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email8.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "fee_correction",
+        "sub_type": "monthly_fee_update",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions inaccurate monthly fee calculations and requests a review of the attached fee schedule to update the system.  The provided Loan ID, Monthly Fee, and Review Date further support this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "OF-3207",
+      "monthly_fee": "$700.00",
+      "review_date": "10/12/2025"
+    },
+    "duplicate_detection": {
+      "is_duplicate": true,
+      "reason": "Matches email5.eml"
+    },
+    "email_file": "email9.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "transaction_processing",
+        "sub_type": "foreign_currency_exchange",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests processing of a foreign currency transaction with a specified amount and loan ID.  The mention of 'conversion and compliance checks' further supports this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "FC-9876",
+      "amount": "\u20ac30,000",
+      "amount_usd": "$35,000",
+      "execution_date": "03/25/2025",
+      "attachment": "currency_rates.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email10.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Loan Document Update",
+        "sub_type": "Verification",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly states \"submitting updated documents for my loan verification\" and provides a Loan ID."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "DOC-VER-1001",
+      "attachments": [
+        "Updated ID Proof",
+        "Residence Proof"
+      ]
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email11.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Operational Rollover",
+        "sub_type": "Cashless Roll Process",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions 'commencing the cashless roll process for our portfolio' and clarifies it's an 'operational rollover, with no fund transfer'."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "CR-2105",
+      "deadline": "05/05/2025",
+      "attachment": "roll_over_instructions.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email12.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Funding Update",
+        "sub_type": "Duplicate Request Investigation",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly states that a duplicate funding update request has been detected and requests investigation to consolidate or discard."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "DUP-1103",
+      "amount": "$15,000.00",
+      "review_deadline": "04/30/2025",
+      "attachment": "duplicate_report.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email13.eml"
+  }
+]

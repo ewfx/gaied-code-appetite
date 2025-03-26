@@ -1,0 +1,23 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "Commitment Change Request",
+        "sub_type": "Loan Modification",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions updating commitment details and includes a commitment change form. The subject line further reinforces this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "CC-4502",
+      "new_commitment_amount": "$50,000.00",
+      "deadline": "12/31/2025",
+      "attachment": "commitment_change_form.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email8.eml"
+  }
+]

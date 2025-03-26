@@ -1,0 +1,27 @@
+{
+  "Payments": [
+    "funds_transfer",
+    "outbound_payment",
+    "payment_confirmation",
+    "Payment Confirmation"
+  ],
+  "Fees": [
+    "fee_dispute",
+    "fee_correction",
+    "fee_amendment_request"
+  ],
+  "Account Information": [
+    "Information Request",
+    "Funding Update"
+  ],
+  "Loans": [
+    "Loan Document Update"
+  ],
+  "Operations": [
+    "transaction_processing",
+    "Operational Rollover"
+  ],
+  "Account Management": [
+    "Commitment Change Request"
+  ]
+}

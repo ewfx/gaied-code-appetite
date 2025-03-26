@@ -1,0 +1,5 @@
+{
+  "Transactions": "This group contains requests related to the movement of funds between accounts.",
+  "Disputes": "This group includes requests challenging or questioning fees charged to an account.",
+  "Account Information": "This group encompasses requests for information related to account activity, balances, or payment statuses."
+}

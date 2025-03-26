@@ -1,0 +1,24 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "Loan Document Update",
+        "sub_type": "Verification",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly states \"submitting updated documents for my loan verification\" and provides a Loan ID."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "DOC-VER-1001",
+      "attachments": [
+        "Updated ID Proof",
+        "Residence Proof"
+      ]
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email11.eml"
+  }
+]

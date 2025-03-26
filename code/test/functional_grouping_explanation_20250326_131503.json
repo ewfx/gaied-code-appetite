@@ -1,0 +1,5 @@
+{
+  "Payments": "This group encompasses all requests related to the movement of funds, including initiating transfers, making outbound payments, and verifying payment status.",
+  "Fees": "This group contains requests concerning banking fees, covering disputes about charges, corrections of incorrect fees, and requests to modify fee structures.",
+  "Account Services": "This group includes requests for general account information and modifications to account agreements or commitments."
+}

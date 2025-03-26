@@ -1,0 +1,15 @@
+[
+  "funds_transfer",
+  "fee_dispute",
+  "payment_confirmation",
+  "Payment Confirmation",
+  "Information Request",
+  "fee_correction",
+  "outbound_payment",
+  "fee_amendment_request",
+  "Commitment Change Request",
+  "transaction_processing",
+  "Loan Document Update",
+  "Operational Rollover",
+  "Funding Update"
+]

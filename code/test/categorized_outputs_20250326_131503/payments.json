@@ -1,0 +1,25 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "outbound_payment",
+        "sub_type": "international_disbursement",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions initiating an outbound money movement of $40,000 for disbursement to international partners.  The attached compliance form further supports this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "MMO-6688",
+      "amount": 40000,
+      "expiration_date": "07/20/2025",
+      "attachments": [
+        "compliance_report.pdf"
+      ]
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email6.eml"
+  }
+]
