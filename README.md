@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Gen AI Orchestrator for Email and Document Triage/Routing
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -19,6 +19,9 @@ Our solution streamlines email triage for Commercial Loan Servicing by automatic
 -	Functional grouping of request types into higher-level categories using the LLM (Gemini).
 -	Evolving grouping across runs to adapt as more emails are processed.
 
+🖼️ Wholistic Architecture Diagram:
+
+![Architecture Diagram](artifacts/demo/Architecture.jpg)
 
 ## 🎥 Demo 
 📹 [Working Video Demo of Code](artifacts/demo/Hackathon_Demo.mp4)
@@ -73,6 +76,3 @@ project_root/
 ├── functional_grouping_map_<timestamp>.json # Gemini-based functional classification (Created after each run)
 ├── functional_grouping_explanation_<timestamp>.json #Gemini-based functional classification explanation (Created after each run)
 ```
-🖼️ Future Architecture Diagram:
-
-![Architecture Diagram](artifacts/demo/Architecture.jpg)
