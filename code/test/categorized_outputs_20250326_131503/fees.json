@@ -1,0 +1,63 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "fee_correction",
+        "sub_type": "monthly_fee_update",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions inaccurate monthly fee calculations and requests a review of the attached fee schedule to update the system.  The provided Loan ID, Monthly Fee, and Review Date further support this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "OF-3207",
+      "monthly_fee": "$700.00",
+      "review_date": "10/12/2025"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email5.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "fee_amendment_request",
+        "sub_type": "fee_recalculation",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests a review of the amendment fee and mentions attached recalculation details. The subject is about amendment fee."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "ADJ-AF-3322",
+      "amendment_fee": "$950",
+      "reference_date": "06/15/2024"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "primary_intent": "fee_amendment_request",
+    "email_file": "email7.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "fee_correction",
+        "sub_type": "monthly_fee_update",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions inaccurate monthly fee calculations and requests a review of the attached fee schedule to update the system.  The provided Loan ID, Monthly Fee, and Review Date further support this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "OF-3207",
+      "monthly_fee": "$700.00",
+      "review_date": "10/12/2025"
+    },
+    "duplicate_detection": {
+      "is_duplicate": true,
+      "reason": "Matches email5.eml"
+    },
+    "email_file": "email9.eml"
+  }
+]

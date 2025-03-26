@@ -1,0 +1,46 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "Payment Confirmation",
+        "sub_type": "Letter of Credit Fee",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly states that the Letter of Credit fee has been paid and provides the loan ID and effective date. The attached receipt further supports this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "FPLCF-7750",
+      "amount": 3200,
+      "payment_type": "Letter of Credit Fee",
+      "effective_date": "09/01/2025",
+      "payer": "Catherine Zhang"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email3.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Information Request",
+        "sub_type": "Loan Product Details",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly asks for detailed brochures and guidelines on loan products."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "INFO-LOAN-2021",
+      "amount": null,
+      "expiration_date": null,
+      "customer_name": "Oliver Grant",
+      "attachment_error": true
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "updated_email20.eml"
+  }
+]

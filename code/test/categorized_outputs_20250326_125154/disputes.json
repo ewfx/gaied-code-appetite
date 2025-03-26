@@ -1,0 +1,32 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "fee_dispute",
+        "sub_type": "reallocation_fee",
+        "confidence": 0.9,
+        "reasoning": "The email explicitly mentions a 'discrepancy in the reallocation fees' and refers to an attached document for details.  Loan ID and amount are provided."
+      },
+      {
+        "type": "payment_confirmation",
+        "sub_type": "letter_of_credit_fee",
+        "confidence": 0.8,
+        "reasoning": "The email explicitly states that the Letter of Credit fee has been successfully paid. A Loan ID and effective date are provided."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id_1": "ADJ-RF-8901",
+      "amount_1": "$1,500.00",
+      "date_1": "08/30/2024",
+      "loan_id_2": "FPLCF-7746",
+      "amount_2": "$3,200",
+      "effective_date_2": "03/01/2025"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "primary_intent": "fee_dispute",
+    "email_file": "email2_multiple_request.eml"
+  }
+]

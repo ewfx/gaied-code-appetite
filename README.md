@@ -2,6 +2,7 @@
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
+- [Wholistic Architecture Diagram](#wholistic-architecture-diagram)
 - [Demo](#demo)
 - [Documentation](#documentation)
 - [How to Run](#how-to-run)
@@ -19,15 +20,19 @@ Our solution streamlines email triage for Commercial Loan Servicing by automatic
 -	Functional grouping of request types into higher-level categories using the LLM (Gemini).
 -	Evolving grouping across runs to adapt as more emails are processed.
 
-🖼️ Wholistic Architecture Diagram:
+## 🖼️ Wholistic Architecture Diagram:
 
-![Architecture Diagram](artifacts/demo/Architecture.jpg)
+![Architecture Diagram](artifacts/arch/Architecture.jpg)
 
 ## 🎥 Demo 
 📹 [Working Video Demo of Code](artifacts/demo/Hackathon_Demo.mp4)
 
 ## 📄 Documentation
-📄 [View The documentation to the solution here!](artifacts/demo/AI_Email_Classification_Documentation.docx)
+📄 [View The documentation to the solution here!](artifacts/arch/AI_Email_Classification_Documentation.docx)
+
+Below folder contains the output file you would see after 3 consecutive runs. You can use these files to understand the documentation:
+[Folder](code/test/)
+
 
 ## 🏃 How to Run
 1. System Requirements

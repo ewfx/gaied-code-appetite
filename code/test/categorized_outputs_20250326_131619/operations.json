@@ -1,0 +1,44 @@
+[
+  {
+    "request_types": [
+      {
+        "type": "transaction_processing",
+        "sub_type": "foreign_currency_exchange",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly requests processing of a foreign currency transaction with a specified amount and loan ID.  The mention of 'conversion and compliance checks' further supports this."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "FC-9876",
+      "amount": "\u20ac30,000",
+      "amount_usd": "$35,000",
+      "execution_date": "03/25/2025",
+      "attachment": "currency_rates.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email10.eml"
+  },
+  {
+    "request_types": [
+      {
+        "type": "Operational Rollover",
+        "sub_type": "Cashless Roll Process",
+        "confidence": 0.95,
+        "reasoning": "The email explicitly mentions 'commencing the cashless roll process for our portfolio' and clarifies it's an 'operational rollover, with no fund transfer'."
+      }
+    ],
+    "extracted_fields": {
+      "loan_id": "CR-2105",
+      "deadline": "05/05/2025",
+      "attachment": "roll_over_instructions.pdf"
+    },
+    "duplicate_detection": {
+      "is_duplicate": false,
+      "reason": "No exact match found"
+    },
+    "email_file": "email12.eml"
+  }
+]
