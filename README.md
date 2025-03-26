@@ -11,21 +11,17 @@
 ## 🎯 Introduction
 Our solution streamlines email triage for Commercial Loan Servicing by automatically classifying incoming requests and extracting key data using Generative AI and OCR. It reads raw email files, interprets the content and attachments, and outputs structured information including request type(s) (with sub-types, confidence scores, and reasoning), extracted fields (e.g. loan IDs, amounts, dates), and duplicate detection flags. Crucially, the system learns from each batch of emails – it dynamically updates its catalog of request types and regenerates a high-level functional grouping after each run. This means as new request themes emerge, the AI adaptively re-organizes them under evolving categories, ensuring the classification stays robust over time. Key features of our pipeline include:
 
-•	Email parsing and analysis of both the email body and attachments.
-•	Intelligent attachment processing for images (OCR), PDFs, and Word documents.
-•	Duplicate request detection to flag repeat inquiries with reasoning.
-•	Request type classification with confidence scoring and reasoning for explainability.
-•	Dynamic category updates so new request types are learned and reused over time.
-•	Functional grouping of request types into higher-level categories using the LLM (Gemini).
-•	Evolving grouping across runs to adapt as more emails are processed.
+-	Email parsing and analysis of both the email body and attachments.
+-	Intelligent attachment processing for images (OCR), PDFs, and Word documents.
+-	Duplicate request detection to flag repeat inquiries with reasoning.
+-	Request type classification with confidence scoring and reasoning for explainability.
+-	Dynamic category updates so new request types are learned and reused over time.
+-	Functional grouping of request types into higher-level categories using the LLM (Gemini).
+-	Evolving grouping across runs to adapt as more emails are processed.
 
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
-
-![Screenshot 1](link-to-image)
+## 🎥 Demo 
+📹 [Working Video Demo of Code](artifacts/demo/Hackathon_Demo.mp4)
 
 ## 📄 Documentation
 📄 [View The documentation to the solution here!](artifacts/demo/AI_Email_Classification_Documentation.docx)
@@ -77,3 +73,6 @@ project_root/
 ├── functional_grouping_map_<timestamp>.json # Gemini-based functional classification (Created after each run)
 ├── functional_grouping_explanation_<timestamp>.json #Gemini-based functional classification explanation (Created after each run)
 ```
+🖼️ Future Architecture Diagram:
+
+![Architecture Diagram](artifacts/demo/Architecture.jpg)
